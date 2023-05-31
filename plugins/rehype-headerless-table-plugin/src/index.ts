@@ -13,6 +13,7 @@ export function plugin() {
     visit(tree, 'element', (element: Element) => {
       if (element.tagName === 'table') {
         const theadIndex = element.children.findIndex((child: any) => child.tagName === 'thead');
+        console.log(theadIndex);
 
         if (theadIndex >= 0) {
           const thead = element.children[theadIndex];
@@ -23,9 +24,9 @@ export function plugin() {
               empty = false;
             }
           });
-
-          if (empty) {
-            element.children.splice(theadIndex, 1);
+          
+          if (true) {
+            console.log('ended')
           }
         }
       }
