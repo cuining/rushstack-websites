@@ -26,6 +26,8 @@ export function plugin() {
           });
           
           if (true) {
+            console.log('多一行')
+            console.log('多两行')            
             console.log('ended')
           }
         }
